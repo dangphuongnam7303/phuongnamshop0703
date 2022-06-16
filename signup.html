@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="src/css/signup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="src/img/index/Logo.png" alt="">
+
+        </header>
+
+        <main>
+            <div class="title">
+                <h3>Welcome to Fudo</h3>
+                <h1>Create Account</h1>
+            </div>
+
+            <form action="" onsubmit="return check_form(event)" id="form_signin">
+                <div><label for="">Email</label></div>  <br>
+                 <input type="text" id="email" placeholder="John.snow@gmail.com"> <br>
+                 <span id="email_error"></span> 
+                 <div><label for="">Fullname</label></div>  <br>
+                 <input type="text" id="name" placeholder="John.snow"> <br>
+                 <span id="name_error"></span> <br>
+                 <div><label for="">Password</label></div>  <br>
+                 <input type="password" id="pass" placeholder="********">
+                 <span id="pass_error"></span> <br>
+                 <div><label for="">Re-Password</label></div>  <br>
+                 <input type="password" id="re-pass" placeholder="********">
+                 <span id="repass_error"></span> <br>
+                 <button id="login" type="submit">Create now</button>
+                 
+             </form>
+        </main>
+    </div>
+    <script src="src/js/signup.js"></script>
+</body>
+</html>

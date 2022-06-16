@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="src/css/signin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="src/img/index/Logo.png" alt="">
+        </header>
+
+        <main>
+            <div class="title">
+                <h3>Welcome back</h3>
+                <h1>Login to your account</h1>
+            </div>
+
+            <form onsubmit="return check_form(event)" id="form_signin">
+               <div><label for="">Email</label></div>  <br>
+                <input type="text" id="email" placeholder="John.snow@gmail.com"> <br>
+                <span id="email_error"></span>
+                <div><label for="">Password</label></div>  <br>
+                <input type="password" id="pass" placeholder="********">
+                <span id="pass_error"></span>
+                <button id="login" >Login now</button>
+                
+            </form>
+            <button id="gg">
+                <div><img src="src/img/signin/iconfinder_Google_1298745 1.png" alt="">
+                 <div>Or sign-in with google</div>
+             </button>
+
+            <div class="support">
+                <div><a href="#">Forgot password?</a></div>
+                <div>Don't have an account? <a href="signup.html">Join free today</a></div>
+            </div>
+        </main>
+    </div>
+    <script src="src/js/signin.js"></script>
+</body>
+</html>
